@@ -37,3 +37,11 @@ img{
     left: 50px;
     font-size: larger;
 }
+.tdiv{
+    background-color: white;
+    width: 600px;
+    height: 1000px;
+    position: relative;
+    bottom: 1000px;
+    left: 250px;
+}
