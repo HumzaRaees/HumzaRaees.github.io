@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marvel Studios</title>
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+    <style>
+        *{
+            margin: auto;
+        }
+        body{
+            
+            background-color: #967272;
+        }
+        .container{
+            width: 1267px;
+    height: 2260px;
+    position: relative;
+    background-color: #292929;
+    right: 4px;
+        }
+        .header{
+            width: 100%;
+    height: 145px;
+    background-color: rgb(29, 29, 29);
+        }
+        .logo{
+            background-image: url(lo.png);
+            width: 700px;
+            height: 70px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            right: 200px;
+            top: 56px;}
+            nav{
+                height: 2px;
+            }
+        nav ul{
+            height: 150px;
+    width: 674px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    bottom: 70px;
+    left: 520px;
+    padding: 5px;
+            
+            
+        }
+        nav ul li { float: left;}
+        nav ul li a,.dropdown-btn
+        { display: inline-block;
+        color:#9b9b9b;
+        text-align: center;
+        font-size: 20px;
+        padding: 70px 22px;
+        text-decoration: none;
+        position: relative;
+        bottom: 23px;
+        }
+        nav ul li a:hover,.dropdown:hover .dropdown-btn
+        { background-color: #df612f;
+        color: #fff;
+        }
+        .center{
+            width: 100%;
+            height: 400px;
+            background-color: rgb(63, 63, 63);
+        }
+        .line{
+            width: 100%;
+            height: 10px;
+            background-color:  #df612f;
+        }
+        .head2{
+            width: 100%;
+            height: 140px;
+            background-color:  rgb(29, 29, 29);
+        }
+        .slider{
+            width: 600px;
+            position: relative;
+            top: 30px;
+            right: 250px;;
+            
+
+        }
+        .photo{
+            width: 293px;
+    height: 331px;
+    background-image: url(b2.jpg);
+    background-size: cover;
+    position: relative;
+    left: 202px;
+    bottom: 321px;
+    border: 4px solid dimgray;
+    
+
+        }
+        .box{
+            width: 190px;
+            height: 170px;
+            background-image: url(q.jpg);
+            background-size: contain;
+            background-color: aliceblue;
+            position: relative;
+            left: 449px;
+            bottom: 660px;
+            
+            
+        }
+        .box2{
+            width: 190px;
+            height: 169px;
+            background-image: url(q.jpg);
+            background-size: contain;
+            background-color: #df612f;
+            position: relative;
+            left: 449px;
+            bottom: 659px;
+        }
+        .t{
+            width: 80px;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 9px;
+    bottom: -35px;
+        }
+        .t1{
+            width: 80px;
+    color: white;
+    font-size: 25px;
+    position: relative;
+    left: 3px;
+    bottom: -36px;
+        }
+        .a1{
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 30px;
+            position: relative;
+            top: 40px;
+        }
+        .a2{
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 30px;
+            position: relative;
+            top: 40px;
+        }
+        .a1 a{
+                color:black;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                font-size: 30px;
+                position: relative;
+                bottom: 10px;
+                left: 3px;
+        }
+        .a2 a{
+                color:black;
+                text-decoration: none;
+                text-align: center;
+                font-weight: bold;
+                font-size: 30px;
+                position: relative;
+                bottom: 10px;
+                left: 3px;
+        }
+        .tt{
+            width: 300px;
+    height: 100px;
+    position: relative;
+    right: 297px;
+    top: -5px;
+        }
+        .ct{
+            width: 300px;
+    height: 100px;
+    position: relative;
+    right: -52px;
+    top: -102px;
+        }
+        .qt{
+            width: 300px;
+    height: 100px;
+    position: relative;
+    left: 473px;
+    top: -202px;
+        }
+    p1{
+        font-size: 30px;
+        font-weight: bold;
+         color: white;
+
+
+        }
+        p2{
+            font-size: 15px;
+            color: #9b9b9b;
+        }
+        P3{
+            font-size: 15PX;
+            color:  #af461c;
+            font-weight: bold;
+            position: relative;
+            left: 20PX;
+        }
+    .r{
+        width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    right: 183px;
+    top: 52px;
+    }
+    .rw{
+        width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    right: 183px;
+    top: 52px;
+    }
+    .rwr{
+        width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+    right: 183px;
+    top: 52px;
+    }
+    .r a{
+        color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    bottom: -5px;
+    left: 18px; }
+    
+    .rw a{
+        color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    bottom: -5px;
+    left: 18px;
+  }
+  .rwr a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    bottom: -5px;
+    left: 18px;
+  }
+  .l2{
+      width: 100%;
+      height: 1px;
+      background-color: rgb(128, 127, 127);
+  }
+  .hn{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 66px;
+  }
+  .hnt{
+    color: white;
+    font-weight: bold;
+    font-size: 34px;
+    position: relative;
+    left: -232px;
+    width: 700px;
+}
+.sl{
+    width: 1156px;
+    height: 1px;
+    background-color: rgb(128, 127, 127);
+    position: relative;
+    top: 19px;
+    right: 6px;
+}
+.mainc{
+    width: 100%;
+    height: 591px;
+    position: relative;
+    top: 75px;
+
+}
+.pica{
+    width: 288px;
+    height: 590px;
+    position: relative;
+    right: 439px;
+}
+.picb{
+    width: 288px;
+    height: 590px;
+    position: relative;
+    bottom: 590px;
+    right: 150px;
+}
+.picc{
+    width: 288px;
+    height: 590px;
+    position: relative;
+    bottom: 1180px;
+    left: 139px;
+   
+}
+.picd{
+    width: 288px;
+    height: 590px;
+    position: relative;
+    bottom: 1770px;
+    left: 428px;
+    }
+    
+    .pa{
+        width: 272px;
+    height: 270px;
+    position: relative;
+    top: 19px;
+    right: 4px;
+    border: 4px solid dimgray;
+    }
+    
+    .pb{
+        width: 272px;
+    height: 270px;
+    position: relative;
+    top: 19px;
+    right: 1px;
+    border: 4px solid dimgray;
+    }
+    .pc{
+        width: 272px;
+    height: 270px;
+    position: relative;
+    top: 19px;
+    right: -1px;
+    border: 4px solid dimgray;
+    }
+    .pd{
+        width: 272px;
+    height: 270px;
+    position: relative;
+    top: 19px;
+    right: -4px;
+    border: 4px solid dimgray;
+    }
+    .pac{
+        width: 266px;
+    height: 264px;
+    background-image: url(paa.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 2334px;
+    right: 443px;
+    }
+    .pan{
+        width: 266px;
+    height: 264px;
+    background-image: url(pc.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 2598px;
+    right: 150px;
+    }
+    .pam{
+        width: 266px;
+    height: 264px;
+    background-image: url(pa.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 2862px;
+    right: -141px;
+    }
+    .pao{
+        width: 266px;
+    height: 264px;
+    background-image: url(pb.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 3126px;
+    right: -433px;
+    }
+
+    .tx{
+        width: 280px;
+    height: 238px;
+    position: relative;
+    right: 4px;
+    top: 37px;
+    }
+    .tq{
+        width: 280px;
+    height: 238px;
+    position: relative;
+    right: 1px;
+    top: 37px;
+    }
+    .te{
+        width: 280px;
+    height: 238px;
+    position: relative;
+    right: -1px;
+    top: 37px;
+    }
+    .ti{
+        width: 280px;
+    height: 238px;
+    position: relative;
+    right: -4px;
+    top: 37px;
+    }
+    p4{
+        font-size: 26px;
+    font-weight: bold;
+    color:#df612f;
+
+
+        }
+        p5{
+            font-size: 15px;
+    color: #9b9b9b;
+    POSITION: relative;
+    TOP: 14px;
+        }
+        P6{
+            f    font-size: 15PX;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 8PX;
+    top: 10px;
+        }
+        .bm{
+            width: 65px;
+    height: 38px;
+    background-color: rgba(34, 51, 83, 0.877);
+    position: relative;
+    top: 27px;
+    right: 107px;
+    border-radius: 5px;
+        }
+        .zz{
+            width: 1156px;
+    height: 1px;
+    background-color: rgb(128, 127, 127);
+    position: relative;
+    top: 33px;
+    right: 6px;
+}
+.sql{
+    width: 100%;
+    height: 182px;
+    
+    position: relative;
+    top: 35px;
+}
+.blc{
+    width: 1156px;
+    height: 143px;
+    position: relative;
+    right: 5px;
+    top: 39px;
+}
+p7{
+        font-size: 26px;
+    font-weight: bold;
+    color:#df612f;
+
+
+        }
+        p8{
+            font-size: 18px;
+    font-weight: bold;
+    color: #9b9b9b;
+
+
+        }
+        p9{
+            font-size: 15px;
+    color: #9b9b9b;
+    POSITION: relative;
+    TOP: 14px;
+
+
+        }
+        p10{
+            font-size: 14px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 9px;
+    left: 6px;
+}
+.pab{
+    width: 97px;
+    height: 36px;
+    background-color: rgba(34, 51, 83, 0.877);
+    position: relative;
+    top: -20px;
+    border-radius: 5px;
+    left: 528px;
+        }
+        .zzz{
+            width: 1156px;
+    height: 1px;
+    background-color: rgb(128, 127, 127);
+    position: relative;
+    top: 65px;
+    right: 6px;
+}
+.mt{
+    width: 100%;
+    height: 76px;
+    position: relative;
+    top: 66px;
+}
+.sot{
+    width: 494px;
+    height: 75px;
+    position: relative;
+    left: 325px;
+}
+.tmt{
+    width: 565px;
+    height: 75px;
+    position: relative;
+    right: 301px;
+    bottom: 75px;
+}
+
+P11{
+    Font-size: 20px;
+    color: white;
+    position: relative;
+    top: 25px;
+    left: 63px;
+}
+P12{
+    Font-size: 20px;
+    color: white;
+    position: relative;
+    top: 25px;
+    left: 6px;
+}
+.sss{
+    width: 431px;
+    height: 1px;
+    background-color: rgb(128, 127, 127);
+    position: relative;
+    top: 50px;
+    left: 32px;
+}
+.ooo{
+    width: 565px;
+    height: 1px;
+    background-color: rgb(128, 127, 127);
+    position: relative;
+    top: 50px;
+}
+.ft{
+    
+    width: 100%;
+    height: 298px;
+    position: relative;
+    top: 65px;
+    
+}
+.iwahg{
+    width: 565px;
+    height: 227px;
+   
+    position: relative;
+    right: 301px;
+    top: 27px;
+}
+.iib{
+    width: 423px;
+    height: 227px;
+    border: 4px solid dimgray;
+    position: relative;
+    top: -200px;
+    left: 357px;
+}
+.sg{
+    
+    background-image: url(sg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 413px;
+    height: 217px;
+    position: relative;
+    top: 6px;
+}
+.play{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: 2px;
+    border: 3px solid white;
+    border-radius: 30px;
+    top: 81px;
+}
+.play a{
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    left: 14px;
+    top: -8px;
+}
+.bor{
+    
+    width: 219px;
+    height: 219px;
+    border: 4px solid dimgray;
+    position: relative;
+    right: 171px;
+    
+}
+.gat{
+    width: 209px;
+    height: 209px;
+    background-image: url(got.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 6px;
+}
+
+.squ{
+    
+    width: 316px;
+    height: 225px;
+    position: relative;
+    bottom: 226px;
+    left: 123px;
+}
+P13{
+    
+    color:#df612f;
+    font-weight: bold;
+}
+P14{
+    color:#9B9B9B;
+    font-weight: bold;
+}
+P15{
+    color: #9b9b9b;
+    position: relative;
+    top: 10PX;
+}
+
+P16 {
+    color: white;
+    position: relative;
+    top: 6px;
+    font-size: 13px;
+    right: -4px;
+}
+.rbb{
+    width: 84px;
+    height: 31px;
+    background-color: rgba(34, 51, 83, 0.877);
+    position: relative;
+    border-radius: 4px;
+    top: 31px;
+    right: 116px;
+}
+.lasl{
+    width: 1163px;
+    height: 1px;
+    background-color: rgb(128, 127, 127);
+    position: relative;
+    bottom: 172px;
+    right: 6px;
+}
+.huh{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 60px;
+}
+.dra{
+
+    height: 100px;
+    background-image: url(what.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 153px;
+    position: relative;
+    right: 512px;
+}
+.jons{
+
+    height: 100px;
+    background-image: url(ave.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 217px;
+    position: relative;
+    bottom: 151px;
+    left: 21px;
+}
+.kha{
+
+    height: 55px;
+    background-image: url(boo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 187px;
+    position: relative;
+    bottom: 328px;
+    left: 519px;
+    
+}
+.duh{
+    width: 100%;
+    height: 4px;
+    background-color: dimgray;
+    position: relative;
+    top: 60px;
+}
+.footer{
+    width: 100%;
+    height: 196px;
+    background-color: rgb(29, 29, 29);
+    position: relative;
+    top: 60px;
+        }
+        .ik{
+            width: 200px;
+    height: 192px;
+    position: relative;
+    right: 489px;
+        }
+        .do{
+            width: 200px;
+    height: 192px;
+    position: relative;
+    right: 288px;
+    bottom: 192px;
+        }
+        .teen{
+            width: 200px;
+    height: 192px;
+    position: relative;
+    right: 87px;
+    
+    bottom: 384px;
+        }
+        .chaar{
+            width: 200px;
+    height: 192px;
+    position: relative;
+    left: 114px;
+    
+    bottom: 576px;
+        }
+        .akhri{
+            width: 248px;
+    height: 192px;
+    background-image: url(end.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 455px;
+    bottom: 767px;
+        }
+        P17{
+            FONT-WEIGHT: BOLD;
+    COLOR:white;
+    FONT-SIZE: 30PX;
+    POSITION: relative;
+    TOP: 15PX;
+        }
+        P18{
+            POSITION: relative;
+    TOP: 31PX;
+    FONT-SIZE: 17PX;
+    color: #9B9B9B;
+        }
+        .nut{
+            width: 181px;
+    height: 49px;
+    background-image: url(cen3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 78px;
+    left: 270px;
+        }
+        .arya{
+            width: 154px;
+    height: 100px;
+    background-image: url(cen4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 244px;
+    right: 262px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="header">
+                    <div class="logo"></div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Clothes</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Costumes</a></li>
+                            <li><a href="#">Covers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="center"> 
+                    <div class="slider">
+                  <!-- Start WOWSlider.com BODY section -->
+            <div id="wowslider-container1">
+                <div class="ws_images"><ul>
+                        <li><img src="data1/images/d0919380dacc6c21261f4215a05889b8.jpg" alt="" title="" id="wows1_0"/></li>
+                        <li><a href="http://wowslider.net"><img src="data1/images/endgame_large.jpg" alt="image slider" title="" id="wows1_1"/></a></li>
+                        <li><img src="data1/images/imageasset.jpg" alt="" title="" id="wows1_2"/></li>
+                    </ul></div>
+                    <div class="ws_bullets"><div>
+                        <a href="#" title=""><span><img src="data1/tooltips/d0919380dacc6c21261f4215a05889b8.jpg" alt=""/>1</span></a>
+                        <a href="#" title=""><span><img src="data1/tooltips/endgame_large.jpg" alt=""/>2</span></a>
+                        <a href="#" title=""><span><img src="data1/tooltips/imageasset.jpg" alt=""/>3</span></a>
+                    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">css image gallery</a> by WOWSlider.com v8.8</div>
+                <div class="ws_shadow"></div>
+                </div>	
+                <script type="text/javascript" src="engine1/wowslider.js"></script>
+                <script type="text/javascript" src="engine1/script.js"></script>
+                <!-- End WOWSlider.com BODY section -->
+            </div>
+            <div class="photo"></div>
+            <div class="box"><div class="t"> Whats <br> New? </div><div class="a1"><a href="#">&#187</a></div></div>
+            <div class="box2"><div class="t1">Whats<br> Special?</div><div class="a2"><a href="#">&#187</a></div></div>
+            </div>
+                <div class="line"></div>
+                <div class="head2">
+                    <div class="tt"><div class="r"><a href="#">1.</a></div><p1>Quick Silver</p1><br><p2>The fastest man alive</p2><br><p3>READ MORE</p3></div>
+                    <div class="ct"><div class="rw"><a href="#">2.</a></div><p1>Captain Marvel</p1><br><p2>Seventh sense power</p2><br><p3>READ MORE</p3></div>
+                    <div class="qt"><div class="rwr"><a href="#">3.</a></div><p1>Iron Man</p1><br><p2>The genius one alive</p2><br><p3>READ MORE</p3></div>
+                </div>
+                <div class="l2"></div>
+                <div class="hn"><div class="hnt">New Arrivals</div><div class="sl"></div></div>
+                <div class="mainc">
+                    <div class="pica"><div class="pa"></div><div class="tx"><p4>Ave t-shirt</p4><br><p5>Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Magnam vero modi facilis officiis, aperiam similique officia inventore sapiente, dignissimos 
+                         consequatur fugit libero odio maiores eveniet dolore illum minima, aliquam repudiandae.</p5><br><div class="bm"><p6>MORE</p6></div></div></div>
+                    <div class="picb"><div class="pb"></div><div class="tq"><p4>Cap's jacket</p4><br><p5>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Magnam vero modi facilis officiis, aperiam similique officia inventore sapiente, dignissimos 
+                            consequatur fugit libero odio maiores eveniet dolore illum minima, aliquam repudiandae.</p5><br><div class="bm"><p6>MORE</p6></div></div></div>
+                    <div class="picc"><div class="pc"></div><div class="te"><p4>Ave t-jack</p4><br><p5>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Magnam vero modi facilis officiis, aperiam similique officia inventore sapiente, dignissimos 
+                            consequatur fugit libero odio maiores eveniet dolore illum minima, aliquam repudiandae.</p5><br><div class="bm"><p6>MORE</p6></div></div></div>
+                    <div class="picd"><div class="pd"></div><div class="ti"><p4>Cap's t-shirt</p4><br><p5>Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Magnam vero modi facilis officiis, aperiam similique officia inventore sapiente, dignissimos 
+                            consequatur fugit libero odio maiores eveniet dolore illum minima, aliquam repudiandae.</p5><br><div class="bm"><p6>MORE</p6></div></div></div>
+                    <div class="pac"></div>
+                    <div class="pan"></div>
+                    <div class="pam"></div>
+                    <div class="pao"></div>
+                            
+            </div>
+            <div class="zz"></div>
+            <div class="sql"><div class="blc"><p7>lT'S YOUR'S</p7><br><p8>ONE STOP SITE WITH A HUGE SOURCE OF UP-TODATE-DATE 
+                WORLDWIDE FREE SHIPPING OF THE AVENGER'S <BR> CLOTHING FROM MARVEL STUDIOS.</p8><br><p9>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Praesentium deserunt inventore minus provident debitis perferendis, totam corrupti dolorum nemo voluptas <BR>
+                quidem iste molestias nam, explicabo aut, ad corporis necessitatibus, Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsam ducimus, mollitia ex saepe,<br> dolorem distinctio voluptatem officia atque eius doloribus quae cumque quis repellendus illo? 
+                </p9><br><div class="pab"><p10>READ MORE</p10></div></div></div>
+                 <div class="zzz"></div>
+        <div class="mt"><div class="sot"><p11>lATEST DESIGN.</p11><div class="sss">
+        </div></div><div class="tmt"><P12>HERE WE GO!</P12><div class="ooo"></div></div></div>
+        <div class="ft"><div class="iwahg"><div class="bor"><div class="gat"></div></div><div class="squ"><p13>NEW FOR LADIES</p13><BR><p14>Limited Edition</p14><br><p15>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem ea in amet iste, 
+        velit perspiciatis molestias et natus aspernatur optio iure reiciendis! Maiores sapiente debitis non, dolorem consequuntur provident labore.</p15><br><div class="rbb"><p16>READ MORE</p16></div></div>
+    </div><div class="iib"><div class="sg"><div class="play"><a href="#">&#187</a></div></div></div><div class="lasl"></div></div>
+    <div class="huh"><div class="dra"></div><div class="nut"></div><div class="jons"></div><div class="arya"></div><div class="kha"></div></div>
+    <div class="duh"></div>
+    <div class="footer"><div class="ik"><p17>TONY</p17><BR><P18>* Lorem ipsum dolor sit <BR> * amet consectetur <BR> 
+        * adipisicing elit <BR> * Numquam deleniti ipsam <BR> * blanditiis debitis et neque</P18>
+    </div><div class="do">
+        <p17>HAWK</p17><BR><P18>* Lorem ipsum dolor sit <BR> * amet consectetur <BR> 
+            * adipisicing elit <BR> * Numquam deleniti ipsam <BR> * blanditiis debitis et neque</P18>
+    </div><div class="teen">
+        <p17>WANDA</p17><BR><P18>* Lorem ipsum dolor sit <BR> * amet consectetur <BR> 
+            * adipisicing elit <BR> * Numquam deleniti ipsam <BR> * blanditiis debitis et neque</P18>
+    </div><div class="chaar">
+        <p17>VISION</p17><BR><P18>* Lorem ipsum dolor sit <BR> * amet consectetur <BR> 
+            * adipisicing elit <BR> * Numquam deleniti ipsam <BR> * blanditiis debitis et neque</P18>
+    </div><div class="akhri"></div></div>
+</div>
+</body>
+</html>
